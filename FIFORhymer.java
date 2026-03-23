@@ -11,6 +11,7 @@ public class FIFORhymer extends defaultCountingOutRhymer {
 
         int ret = temp.countOut();
 
+
         while (!temp.callCheck())
             countIn(temp.countOut());
 
