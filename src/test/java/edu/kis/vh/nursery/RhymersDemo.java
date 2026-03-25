@@ -17,7 +17,7 @@ class RhymersDemo {
     private static void testRhymers(Rhymersfactory factory) {
         defaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
                 factory.GetFIFORhymer(), factory.GetHanoiRhymer()};
-
+// TODO: needs refactoring - usunac magiczne liczby (np. 15, 3) i zastapic je stalymi (constants)
         for (int i = 1; i < 15; i++)
             for (int j = 0; j < 3; j++)
                 rhymers[j].countIn(i);
